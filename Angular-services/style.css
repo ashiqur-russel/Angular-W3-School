@@ -1,0 +1,23 @@
+* {
+  background-color: rgb(198, 193, 204);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(31, 29, 26);
+}
+
+.heading {
+  color: brown;
+}
+
+.para {
+  color: darkseagreen;
+}
+
+.contain {
+  display: flex;
+  padding: 10px;
+  background-color: cadetblue;
+}
