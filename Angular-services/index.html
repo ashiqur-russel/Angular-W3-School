@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./style.css">
+
     <title>Services</title>
+
 </head>
 <body ng-app="myApp">
-    <p>
-    <h2>Timeout Service</h2>
+    <p class="para">
+    <h2 class="heading">Timeout Service</h2>
     </p>
 
-    <div ng-controller="myTimeoutCntrl"> 
+    <di
+    v class="contain" ng-controller="myTimeoutCntrl">
         <p>This header will change after two seconds:</p>
-        <h1>{{myHeader}}</h1> 
+        <h1 class="service-cl">{{myHeader}}</h1>
     </div>
     <!--Interval Service-->
-    <p><h2>Interval Service</h2></p>
+    <p class="para">
+    <h2 class="heading">Interval Service</h2>
+    </p>
 
-    <div ng-controller="myIntervalCtrl"> 
-        <p>The time is:</p>  
-        <h1>{{theTime}}</h1> 
+    <div ng-controller="myIntervalCtrl" class="contain">
+        <p>The time is:</p>
+        <h1 >{{theTime}}</h1>
     </div>
-    
-<p>The $interval service runs a function every specified millisecond.</p>
+
+    <p>The $interval service runs a function every specified millisecond.</p>
     <!-- JS-->
     <script src="./services.js"></script>
-
 
 </body>
 </html>
