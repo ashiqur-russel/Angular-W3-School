@@ -26,3 +26,10 @@ app.service('hexafy',function(){
 app.controller('myOwnService',function($scope, hexafy){
   $scope.hex=hexafy.myFunc(255);
 })
+
+//Custom filter
+app.filter('myFormat',['hexafy',function(hexafy){
+  return function(x){
+    return hexafy.myFunc(x);
+  }
+}])
