@@ -33,3 +33,7 @@ app.filter('myFormat',['hexafy',function(hexafy){
     return hexafy.myFunc(x);
   }
 }])
+
+app.controller('mycustomFilter', function($scope) {
+    $scope.counts = [255, 251, 200];
+});

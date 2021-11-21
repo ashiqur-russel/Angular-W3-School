@@ -47,6 +47,18 @@
     <div><span>{{255 | myFormat}}</h1>
     </div>    
     </div>
+        <p>Use a filter when displaying the array [255, 251, 200]:</p>
+
+    <div class ="contain" ng-controller="mycustomFilter">
+    
+    <div><ul>
+        <li ng-repeat="x in counts">{{x | myFormat}}</li>
+    </ul></div>
+    
+    </div>
+            <p>This filter uses a service that converts numbers into hexadecimal values.</p>
+
+
 
 
     <!-- JS-->
