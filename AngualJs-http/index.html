@@ -15,6 +15,21 @@
         <p>Today's welcome message is:</p>      
         <h1>{{myWelcome}}</h1>
     </div>
+
+    <div ng-controller="myCtrl1">
+        <p>Data : {{content}}</p>
+        <p>Status : {{statuscode}}</p>
+        <p>StatusText : {{statustext}}</p> 
+    </div>
+
+    <div ng-controller="customersCtrl"> 
+        <p>Http request for getting JSON data</p> 
+        <ul>
+            <li ng-repeat="x in myData">
+                {{ x.Name + ', ' + x.Country }}
+            </li>
+        </ul>
+
     <!-- JS-->
     <script src="./http.js"></script>
 </body>
