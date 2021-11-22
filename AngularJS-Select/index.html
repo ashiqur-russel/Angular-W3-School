@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+
+    <title>Angular Select</title>
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="myCtrl" >
+        <select ng-model="selectedName" ng-options="x for x in names"></select>
+    </div>
+    
+        <!-- JS-->
+        <script src="./select.js"></script>
+</body>
+
+</html>
