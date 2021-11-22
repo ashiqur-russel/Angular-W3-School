@@ -12,6 +12,7 @@
     <div ng-app="myApp" ng-controller="myPersonCtrl">
         <table>
             <tr ng-repeat="x in names | orderBy:'Country'">
+                <td>{{$index +1}}</td>
                 <td>{{ x.Name }}</td>
                 <td>{{ x.Country | uppercase}}</td>
             </tr>
