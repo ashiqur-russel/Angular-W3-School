@@ -17,6 +17,16 @@
         <select ng-model="selectedName" ng-options="x for x in names"></select>
     </div>
     
+    <div ng-controller="myCar">
+        <p>Select a car:</p>
+
+        <select ng-model="selectedcCar">
+            <option ng-repeat="x in cars" value="{{x.model}}">{{x.model}}</option>
+        </select>
+
+        <h1>You Slected:{{selectedcCar}}</h1>
+    </div>
+    
         <!-- JS-->
         <script src="./select.js"></script>
 </body>
