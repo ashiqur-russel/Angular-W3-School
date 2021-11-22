@@ -26,8 +26,6 @@ $scope.cars=[
 
 //Using ng-options:
 
-
-
 app.controller('myCar2',function($scope){
 $scope.cars=[
     {model:"Ford Mustang",color:"Red"},
@@ -35,3 +33,11 @@ $scope.cars=[
     {model:"Volvo XC90",color:"Black"}
 ]
 })
+
+app.controller('myCar3', function($scope) {
+    $scope.cars = {
+        car01 : {brand : "Ford", model : "Mustang", color : "red"},
+        car02 : {brand : "Fiat", model : "500", color : "white"},
+        car03 : {brand : "Volvo", model : "XC90", color : "black"}
+    }
+});
