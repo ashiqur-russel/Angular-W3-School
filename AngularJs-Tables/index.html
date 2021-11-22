@@ -13,7 +13,7 @@
         <table>
             <tr ng-repeat="x in names | orderBy:'Country'">
                 <td>{{ x.Name }}</td>
-                <td>{{ x.Country }}</td>
+                <td>{{ x.Country | uppercase}}</td>
             </tr>
         </table>
     </div>
