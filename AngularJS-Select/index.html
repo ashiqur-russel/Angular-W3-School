@@ -26,6 +26,16 @@
 
         <h1>You Slected:{{selectedcCar}}</h1>
     </div>
+
+    <div ng-controller="myCar1">
+        <p>Select a car:</p>
+    
+        <select ng-model="selectedcCar">
+            <option ng-repeat="x in cars" ng-value="{{x}}">{{x.model}}</option>
+        </select>
+    
+        <h1>You Slected a {{selectedcCar.color}} {{selectedcCar.model}}</h1>
+    </div>
     
         <!-- JS-->
         <script src="./select.js"></script>
