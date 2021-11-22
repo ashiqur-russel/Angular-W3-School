@@ -36,7 +36,18 @@
     
         <h1>You Slected a {{selectedcCar.color}} {{selectedcCar.model}}</h1>
     </div>
+
+    <div ng-controller="myCar2">
     
+        <p>Select a car:</p>
+    
+        <select ng-model="selectedCar" ng-options="x.model for x in cars">
+        </select>
+    
+        <h1>You selected: {{selectedCar.model}}</h1>
+        <p>Its color is: {{selectedCar.color}}</p>
+    
+    </div>
         <!-- JS-->
         <script src="./select.js"></script>
 </body>

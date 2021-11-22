@@ -23,3 +23,15 @@ $scope.cars=[
     {model:"Volvo XC90",color:"Black"}
 ]
 })
+
+//Using ng-options:
+
+
+
+app.controller('myCar2',function($scope){
+$scope.cars=[
+    {model:"Ford Mustang",color:"Red"},
+    {model:"Fiat 500",color:"White"},
+    {model:"Volvo XC90",color:"Black"}
+]
+})
