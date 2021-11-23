@@ -16,9 +16,12 @@
     <div ng-controller="myCtrl">
         <h1 ng-mouseover="count=count+1"> mouse over me</h1>
         <h2>{{count}}</h2>
-
     </div>
-  
+
+    <div ng-controller="myClick">
+        <button ng-click="count=count+1"> Click Me<button/>
+        <p>{{count}}</p>
+    </div>
         <!-- JS-->
         <script src="./event.js"></script>
 </body>
