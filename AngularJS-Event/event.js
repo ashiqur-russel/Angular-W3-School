@@ -5,4 +5,7 @@ app.controller('myCtrl',function($scope){
 
 app.controller('myClick',function($scope){
     $scope.count=0;
+    $scope.myFunction= function(){
+        $scope.count++;
+    }
 })
