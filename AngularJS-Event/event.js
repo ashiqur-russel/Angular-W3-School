@@ -9,3 +9,10 @@ app.controller('myClick',function($scope){
         $scope.count++;
     }
 })
+
+app.controller('myToggle',function($scope){
+    $scope.showMe=false;
+    $scope.myFunction= function(){
+        $scope.showMe=!$scope.showMe;
+    }
+})

@@ -13,14 +13,26 @@
 </head>
 
 <body ng-app="myApp">
+    <!--mousover-->
     <div ng-controller="myCtrl">
         <h1 ng-mouseover="count=count+1"> mouse over me</h1>
         <h2>{{count}}</h2>
     </div>
 
+    <!--ng-click-->
     <div ng-controller="myClick">
         <button ng-click="myFunction()"> Click Me<button/>
         <p>{{count}}</p>
+    </div>
+    <!--Toggle, True/False-->
+    <div ng-controller="myToggle">
+        <button ng-click="myFunction()"> Click Me!<button/>
+            <div ng-show="showMe">
+                <h1>Menu:</h1>
+                <div>Pizza</div>
+                <div>Pasta</div>
+                <div>Pesce</div>
+            </div>
     </div>
         <!-- JS-->
         <script src="./event.js"></script>
