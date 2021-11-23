@@ -20,6 +20,13 @@
         </form>
         <h1>You Entered : {{firstname}}</h1>
     </div>
+    <div>
+        <form>
+            Check to show a header:
+            <input type="checkbox"  ng-model="myVar">
+        </form>
+        <h1 ng-show="myVar">The Header</h1>
+    </div>
 
         <!-- JS-->
         <script src="./form.js"></script>
