@@ -13,8 +13,9 @@
 </head>
 
 <body ng-app="myApp">
-    <!--mousover-->
-    <div ng-controller="myCtrl">
+    
+<!--
+<div ng-controller="myCtrl">
         <form>
             First Name :<input type="text" ng-model="firstname">
         </form>
@@ -27,6 +28,7 @@
         </form>
         <h1 ng-show="myVar">The Header</h1>
     </div>
+            <br><br>
 
     <div>
     <form>
@@ -35,6 +37,7 @@
             <input type="radio" ng-model="myVar" value="tuts">Tutorials
             <input type="radio" ng-model="myVar" value="cars">Cars
     </form>
+            <br><br>
 
     <div ng-switch="myVar">
             <div ng-switch-when="dogs">
@@ -51,6 +54,7 @@
                 </div>
         </div>
     </div>
+            <br><br>
 
     <div>
         <form>
@@ -75,9 +79,24 @@
                 <h1>Cars</h1>
                 <p>Read about cars.</p>
             </div>
-</div>
+        </div>
     </div>
-
+            <br><br>
+-->
+    
+<!--Form-->
+    <div ng-controller="formCtrl">
+        <form novalidate>
+            First Name:<br>
+            <input type="text" ng-model="user.firstName"><br>
+            Last Name:<br>
+            <input type="text" ng-model="user.lastName">
+            <br><br>
+            <button ng-click="reset()">RESET</button>
+        </form>
+            <p>form = {{user}}</p>
+            <p>master = {{master}}</p>
+    </div>
         <!-- JS-->
         <script src="./form.js"></script>
 </body>
