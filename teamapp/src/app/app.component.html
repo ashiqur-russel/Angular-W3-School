@@ -1,5 +1,6 @@
 <div class="container">
-    <h1>Team Generator</h1>
+    <div class="ui card">
+      <h1>Team Generator</h1>
     <ul class="list">
       <li>Ashiqur</li>
       <li>Russel</li>
@@ -7,10 +8,12 @@
 
     <div class="add-members-container">
       <input
+        #addMemberInput
         type="text"
         placeholder="Name"
+        (input)="onInput(addMemberInput.value)"
       />
-      <button>Add</button>
+      <button (click)="addMember()">Add</button>
     </div>
 
     <div class="input-container">
@@ -18,7 +21,8 @@
         type="number"
         placeholder="# of teams"
       />
-      <button>Generate</button> 
+      <button >Generate</button> 
+    </div>
     </div>
 </div>
 
